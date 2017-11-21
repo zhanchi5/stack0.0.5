@@ -11,10 +11,10 @@ HunterGate(
 
 project(demo)
 
-hunter_add_package(stack)
-find_package(stack)
+hunter_add_package(stack0.0.5)
+find_package(stack0.0.5)
 
 add_executable(demo ${CMAKE_CURRENT_SOURCE_DIR}/sources/demo.cpp)
-target_link_libraries(demo stack)
+target_link_libraries(demo stack0.0.5)
 
 install(TARGETS demo RUNTIME DESTINATION bin)
